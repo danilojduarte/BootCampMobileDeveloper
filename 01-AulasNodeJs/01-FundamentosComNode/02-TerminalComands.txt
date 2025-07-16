@@ -1,0 +1,139 @@
+Aqui está uma lista dos comandos de terminal mais comuns e úteis para desenvolvedores, com foco no uso dentro do VS Code:
+
+Comandos Essenciais do Terminal no VS Code
+Navegação de Arquivos e Diretórios
+ls (Linux/macOS) / dir (Windows)
+
+Descrição: Lista o conteúdo do diretório atual.
+
+Exemplos:
+
+ls: Lista arquivos e pastas no diretório atual.
+
+ls -l: Lista com detalhes (permissões, tamanho, data).
+
+ls -a: Lista incluindo arquivos e diretórios ocultos.
+
+cd <diretório>
+
+Descrição: Muda o diretório de trabalho atual.
+
+Exemplos:
+
+cd meu-projeto: Entra na pasta "meu-projeto".
+
+cd ..: Volta um nível de diretório.
+
+cd ~: Vai para o diretório "home" do usuário.
+
+cd /: Vai para a raiz do sistema de arquivos (Linux/macOS).
+
+pwd (Linux/macOS) / cd (Windows, sozinho)
+
+Descrição: Imprime o caminho completo do diretório de trabalho atual. Útil para saber onde você está no sistema de arquivos.
+
+Manipulação de Arquivos e Diretórios
+mkdir <nome_do_diretório>
+
+Descrição: Cria um novo diretório (pasta).
+
+Exemplo: mkdir nova-pasta
+
+touch <nome_do_arquivo> (Linux/macOS) / type nul > <nome_do_arquivo> (Windows)
+
+Descrição: Cria um novo arquivo vazio ou atualiza o timestamp de um arquivo existente.
+
+Exemplo: touch index.js
+
+cp <origem> <destino>
+
+Descrição: Copia arquivos ou diretórios.
+
+Exemplos:
+
+cp arquivo.txt nova_pasta/: Copia arquivo.txt para nova_pasta.
+
+cp -r pasta_origem pasta_destino: Copia uma pasta recursivamente.
+
+mv <origem> <destino>
+
+Descrição: Move ou renomeia arquivos e diretórios.
+
+Exemplos:
+
+mv arquivo.txt nova_pasta/: Move arquivo.txt para nova_pasta.
+
+mv antigo.txt novo.txt: Renomeia antigo.txt para novo.txt.
+
+rm <arquivo> (Linux/macOS) / del <arquivo> (Windows)
+
+Descrição: Remove (apaga) arquivos.
+
+Cuidado: Arquivos removidos com este comando geralmente não vão para a lixeira.
+
+Exemplo: rm lixo.txt
+
+rm -r <diretório> (Linux/macOS) / rmdir /s <diretório> (Windows)
+
+Descrição: Remove diretórios e seu conteúdo recursivamente.
+
+Cuidado: Use com extrema cautela, pois apaga tudo dentro da pasta sem confirmação.
+
+Exemplo: rm -r pasta-antiga
+
+Visualização de Conteúdo
+cat <arquivo> (Linux/macOS) / type <arquivo> (Windows)
+
+Descrição: Exibe o conteúdo de um arquivo diretamente no terminal.
+
+Exemplo: cat README.md
+
+less <arquivo> (Linux/macOS)
+
+Descrição: Permite visualizar o conteúdo de um arquivo grande página por página, com rolagem e busca. Pressione q para sair.
+
+Exemplo: less big_log.txt
+
+Comandos de Sistema e Utilidades
+clear (Linux/macOS) / cls (Windows)
+
+Descrição: Limpa a tela do terminal, removendo todo o histórico de comandos e saídas anteriores.
+
+code .
+
+Descrição: Abre a pasta atual no VS Code. Extremamente útil para iniciar um projeto rapidamente após navegar até ele no terminal. Se você já estiver no VS Code, ele abrirá uma nova janela com essa pasta.
+
+Exemplo: Navegue até sua pasta de projeto e digite code .
+
+history (Linux/macOS) / doskey /history (Windows)
+
+Descrição: Mostra um histórico dos comandos que você executou anteriormente no terminal.
+
+man <comando> (Linux/macOS)
+
+Descrição: Exibe o manual (documentação) de um comando específico. Pressione q para sair.
+
+Exemplo: man ls
+
+Comandos Específicos de Desenvolvimento (Exemplos)
+Estes são exemplos genéricos, pois os comandos reais dependem da sua stack de desenvolvimento.
+
+npm install, npm run dev, npm test (Node.js/JavaScript)
+
+Descrição: Comandos para gerenciar pacotes, iniciar servidores de desenvolvimento e executar testes em projetos Node.js.
+
+git clone <url>, git add ., git commit -m "mensagem", git push, git pull
+
+Descrição: Comandos essenciais do Git para controle de versão (clonar repositórios, adicionar arquivos ao stage, fazer commits, enviar/receber alterações).
+
+python <arquivo.py>
+
+Descrição: Executa um script Python.
+
+docker compose up, docker ps
+
+Descrição: Comandos do Docker para gerenciar contêineres.
+
+Lembre-se que o VS Code oferece o terminal integrado exatamente para que você não precise ficar alternando entre o editor e uma janela de terminal separada, otimizando seu fluxo de trabalho.
+
+Qual tipo de desenvolvimento você mais faz? Posso detalhar mais comandos específicos para sua área!
