@@ -129,5 +129,39 @@ Verifica por versões desatualizadas dos pacotes instalados.
 Funcionalidade: Lista os pacotes que podem ser atualizados para uma versão mais recente, mostrando a versão atual, a versão desejada (conforme package.json) e a versão mais recente disponível.
 
 npm audit
-Comando para auditar vulnerabilidades de segurança nos pacotes do
+Comando para auditar vulnerabilidades de segurança nos pacotes do seu projeto.
 
+Funcionalidade:
+
+Analisa as dependências do seu projeto em busca de vulnerabilidades conhecidas.
+
+Sugere correções e atualizações para resolver os problemas de segurança.
+
+Ferramentas Comumente Usadas (Instaladas via npm)
+Nodemon
+Uma ferramenta que monitora alterações nos arquivos de código e reinicia automaticamente o servidor Node.js.
+
+Funcionalidade: Acelera o ciclo de desenvolvimento, pois você não precisa parar e iniciar o servidor manualmente a cada mudança.
+
+Instalação:
+
+Bash
+
+npm install -g nodemon
+Uso:
+
+Bash
+
+nodemon app.js
+npx
+Ferramenta para executar pacotes npm sem instalá-los globalmente.
+
+Funcionalidade: Útil para executar comandos únicos ou geradores de projeto (como create-react-app, express-generator) sem poluir seu ambiente global.
+
+Exemplo:
+
+Bash
+
+npx create-react-app meu-app-react
+npx express-generator meu-app-express
+Esses comandos formam a base para trabalhar eficientemente com Node.js e gerenciar seus projetos usando o npm. Conhecê-los bem é crucial para qualquer desenvolvedor Node.js!
