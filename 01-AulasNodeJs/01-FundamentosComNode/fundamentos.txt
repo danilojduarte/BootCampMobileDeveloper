@@ -1,0 +1,133 @@
+Comandos Essenciais do Node.js e NPM
+node
+Este é o comando fundamental para executar arquivos JavaScript com o Node.js.
+
+Funcionalidade:
+
+node <nome_do_arquivo.js>: Inicia a execução do script especificado.
+
+node: Entra no REPL (Read-Eval-Print Loop) interativo do Node.js, onde você pode executar comandos JavaScript linha por linha.
+
+Exemplo:
+
+Bash
+
+node app.js
+Isso executaria o arquivo app.js.
+
+npm init
+Utilizado para inicializar um novo projeto Node.js e criar o arquivo package.json.
+
+Funcionalidade:
+
+Cria interativamente o arquivo package.json, que armazena metadados do projeto (nome, versão, descrição, scripts, dependências).
+
+É o primeiro passo para configurar um projeto gerenciado pelo npm.
+
+Exemplo:
+
+Bash
+
+npm init
+Serão feitas perguntas sobre o projeto, e um package.json será gerado.
+
+npm install
+Comando essencial para instalar pacotes e gerenciar dependências.
+
+Funcionalidade:
+
+npm install <nome_do_pacote>: Instala um pacote específico no diretório node_modules do seu projeto e o adiciona como dependência no package.json (por padrão, como dependência de produção).
+
+npm install: Se executado sem um nome de pacote, instala todas as dependências listadas no package.json (ideal para configurar um projeto após cloná-lo).
+
+npm install -g <nome_do_pacote>: Instala um pacote globalmente, tornando-o disponível em qualquer lugar do seu sistema (útil para ferramentas de linha de comando como o Nodemon ou Express Generator).
+
+npm install <nome_do_pacote> --save-dev ou npm install <nome_do_pacote> -D: Adiciona o pacote como uma dependência de desenvolvimento (devDependencies), usada apenas durante o desenvolvimento (testes, linters, bundlers).
+
+npm install <nome_do_pacote> --save-prod ou npm install <nome_do_pacote> -P (comportamento padrão): Adiciona o pacote como uma dependência de produção (dependencies), necessária para a aplicação rodar.
+
+Exemplo:
+
+Bash
+
+npm install express
+npm install jest --save-dev
+npm install
+npm uninstall
+Utilizado para remover pacotes de um projeto.
+
+Funcionalidade:
+
+npm uninstall <nome_do_pacote>: Remove o pacote especificado do node_modules e o remove do package.json.
+
+Exemplo:
+
+Bash
+
+npm uninstall lodash
+npm update
+Comando para atualizar pacotes para suas versões mais recentes.
+
+Funcionalidade:
+
+npm update <nome_do_pacote>: Atualiza um pacote específico para a versão compatível mais recente, conforme definido no package.json.
+
+npm update: Atualiza todos os pacotes do projeto para suas versões mais recentes, respeitando as faixas de versão especificadas no package.json.
+
+Exemplo:
+
+Bash
+
+npm update express
+npm update
+npm run
+Executa scripts personalizados definidos no package.json.
+
+Funcionalidade:
+
+O package.json pode ter uma seção "scripts" onde você define comandos personalizados para automatizar tarefas (iniciar o servidor, executar testes, compilar código, etc.).
+
+npm run <nome_do_script>: Executa o script nomeado.
+
+Exemplo:
+Se no seu package.json você tem:
+
+JSON
+
+"scripts": {
+  "start": "node server.js",
+  "test": "jest"
+}
+Você pode rodar:
+
+Bash
+
+npm run start  // ou simplesmente npm start para scripts pré-definidos como "start", "test"
+npm run test
+npm start
+Um atalho para iniciar o script start definido no package.json.
+
+Funcionalidade: É equivalente a npm run start. Se você tiver um script start definido no seu package.json, este comando o executa.
+
+npm test
+Um atalho para executar o script test definido no package.json.
+
+Funcionalidade: É equivalente a npm run test. Geralmente usado para executar os testes automatizados do seu projeto.
+
+npm publish
+Utilizado por desenvolvedores que querem publicar seus pacotes no npm registry.
+
+Funcionalidade:
+
+Disponibiliza seu pacote para que outras pessoas possam instalá-lo usando npm install <seu_pacote>.
+
+Requer que você esteja logado na sua conta npm (npm login).
+
+npm outdated
+Verifica por versões desatualizadas dos pacotes instalados.
+
+Funcionalidade: Lista os pacotes que podem ser atualizados para uma versão mais recente, mostrando a versão atual, a versão desejada (conforme package.json) e a versão mais recente disponível.
+
+npm audit
+Comando para auditar vulnerabilidades de segurança nos pacotes do
+
