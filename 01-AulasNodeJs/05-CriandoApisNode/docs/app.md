@@ -1,4 +1,4 @@
-# Nome do app - Aula Concluída - Mapeando Um Problema
+# Nome do app - Aula Concluída - Criando arquitetura básicca do projeto
 Podcast Menager;
 
 ### Descrição
