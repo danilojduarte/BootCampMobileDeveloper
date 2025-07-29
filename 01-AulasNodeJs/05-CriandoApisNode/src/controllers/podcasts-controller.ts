@@ -1,25 +1,15 @@
 import { IncomingMessage, ServerResponse } from 'http';
+import { serviceListEpisodes } from '../services/list-episodes-services';
 
 export const getListEpisodes = async ( 
   req : IncomingMessage, 
   res: ServerResponse
 ) => {
+
+  const content = await serviceListEpisodes();
+
   res.writeHead(200, {'Content-Type' : "application/json"});
   res.end(
-    JSON.stringify([
-{
-        podcastName: "flow",
-        episodio: "ALOK - Flow #319",
-        videoId: "XhQuJI8S55c",
-        category: ["música", "show"]
-},
-{
-        podcastName: "flow",
-        episodio: "SERGIO - Flow #320",
-        videoId: "1ZLqvRvrg",
-        category: ["ciência", "IA"],
-
-      }, 
-    ])
+    JSON.stringify(content)
   );
 };
