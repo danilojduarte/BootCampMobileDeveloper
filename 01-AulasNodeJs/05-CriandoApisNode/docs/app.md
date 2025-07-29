@@ -31,7 +31,7 @@ nome do podcast, nome o episodio, imagem de capa, link, category.
   videoId: "XhQuJI8S55c",
   cover: "https://i.ytimg.com/vi/XhQuJI8S55c/maxresdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDSDaw428aLerjMRrz3iU1Z4mI4xg",
   link: "https://www.youtube.com/watch?v=XhQuJI8S55c",
-  category: ["música", "show"]
+  category: ["música", "show"],
 
 },
 {
@@ -40,7 +40,7 @@ nome do podcast, nome o episodio, imagem de capa, link, category.
   videoId: "1ZLqvRvrg",
   cover: "https://i.ytimg.com/vi/g-1ZLqvRvrg/maxresdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCoHQOY0UNaJRAC5t7kbJse3LTiig",
   link: "https://www.youtube.com/watch?v=g-1ZLqvRvrg",
-  category: ["ciência", "IA"]
+  category: ["ciência", "IA"],
 
 },
 ]
