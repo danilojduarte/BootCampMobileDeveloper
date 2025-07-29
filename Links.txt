@@ -3,3 +3,6 @@ Link repositorio Github DIO
 https://github.com/digitalinnovationone/formacao-nodejs/tree/main
 
 //Aula - Criando um repository
+
+
+//Anotacoes Aula Introducao React Native {Primeiros Passos com React Native & Expo}
