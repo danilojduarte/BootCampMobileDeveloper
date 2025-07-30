@@ -1,5 +1,9 @@
 Link repositorio Github DIO
 
+Conteudo 01 - AulasNode
+#P02-Trabalhando NodeModules {Aula ModuleExports}
+
+
 https://github.com/digitalinnovationone/formacao-nodejs/tree/main
 
 //Aula - Criando um repository
