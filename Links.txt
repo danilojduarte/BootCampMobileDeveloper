@@ -1,7 +1,8 @@
 Link repositorio Github DIO
 
 Conteudo 01 - AulasNode
-#P02-Trabalhando NodeModules {Aula Export Consts}
+
+#P02-Trabalhando NodeModules {Aula Concluída}
 
 
 https://github.com/digitalinnovationone/formacao-nodejs/tree/main
