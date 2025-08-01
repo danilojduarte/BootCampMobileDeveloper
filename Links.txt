@@ -4,6 +4,9 @@ Conteudo 01 - AulasNode
 
 #P02-Trabalhando NodeModules {Aula Concluída}
 
+#P03-Modularização com EcmaScript Modules {Iniciando Aula}
+
+
 
 https://github.com/digitalinnovationone/formacao-nodejs/tree/main
 
