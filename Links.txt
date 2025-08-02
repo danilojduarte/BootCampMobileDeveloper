@@ -4,7 +4,8 @@ Conteudo 01 - AulasNode
 
 #P02-Trabalhando NodeModules {Aula Concluída}
 
-#P03-Modularização com EcmaScript Modules {Iniciando Aula}
+#P03-Modularização com EcmaScript Modules = 
+{Iniciando Aula}
 
 
 
@@ -13,4 +14,5 @@ https://github.com/digitalinnovationone/formacao-nodejs/tree/main
 //Aula - Criando um repository
 
 
-//Anotacoes Aula Introducao React Native {Usando Expo}
+//Anotacoes Aula Introducao React Native = 
+ {Usando Expo}
