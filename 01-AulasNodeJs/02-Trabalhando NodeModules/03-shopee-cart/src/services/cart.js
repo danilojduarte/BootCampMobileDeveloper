@@ -40,6 +40,9 @@ async function removeItem(userCart, item){
 
 
   //caso item = 1 deletar o item
+  if(userCart[indexFound].quantity ==1 ){
+    userCart.splice(indexFound, 1);
+  }
 }
 
 async function displaycart(userCart){
