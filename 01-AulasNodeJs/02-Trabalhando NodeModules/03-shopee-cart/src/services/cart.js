@@ -24,12 +24,22 @@ async function deleteItem(userCart, name) {
 }
 
 //Remover um item
-async function removeItem(userCart, index){
-  if (index >= 0 && index < userCart.length) {
-    userCart.splice(index, 1);
-  } else {
-    console.log(`Item at index ${index} not found in the cart.`);
+async function removeItem(userCart, item){
+  const indexFound = userCart.findIndex((p) => p.name === item.name);
+  
+  if(indexFound == -1) {
+    console.log("Item não encnontrado");
+    return;
   }
+
+
+  //subtrair 1 itenm.
+  if(userCart[indexFound].quantity > 1){
+    userCart[indexFound].quantity -= 1
+  }
+
+
+  //caso item = 1 deletar o item
 }
 
 async function displaycart(userCart){

@@ -13,4 +13,6 @@ await cartService.addItem(myCart, item1);
 await cartService.addItem(myCart, item2);
 await cartService.displaycart(myCart);
 
+await cartService.removeItem(myCart, item2);
+
 await cartService.calculateTotal(myCart);
