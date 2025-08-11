@@ -2,7 +2,7 @@ Link repositorio Github DIO
 
 Conteudo 01 - AulasNode
 
-#P02-Trabalhando NodeModules {Iniciando Aula - Carrinho de Compras da Shopee com Node.js}
+#P02-Trabalhando NodeModules {Projeto Finalizado}
 
 #P03-Modularização com EcmaScript Modules = 
 {Iniciando Aula}
