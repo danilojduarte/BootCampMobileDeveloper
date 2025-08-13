@@ -16,3 +16,5 @@ https://github.com/digitalinnovationone/formacao-nodejs/tree/main
 
 //Anotacoes Aula Introducao React Native = 
  {Usando Expo}
+
+ //Introducao a React Native - Criado app gerado de senha - Aula{Criando um input de texto}
