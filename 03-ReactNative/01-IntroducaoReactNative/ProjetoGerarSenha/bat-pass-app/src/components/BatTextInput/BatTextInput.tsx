@@ -8,7 +8,8 @@ export function BatTextInput() {
     <View>
       <TextInput 
       style={styles.input}
-      placeholder='Password'>
+      placeholder='Password'
+    >
 
       </TextInput>
     </View>
