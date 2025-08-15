@@ -13,12 +13,11 @@ export default function Home() {
         <BatLogo />
       </View>
 
-      <View>
+      <View style={styles.inputContainer}>
         <BatTextInput />
       </View>
-      
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+
+      <StatusBar style="light" />
     </View>
   )
 };
