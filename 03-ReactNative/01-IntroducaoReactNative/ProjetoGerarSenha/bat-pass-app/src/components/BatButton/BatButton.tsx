@@ -5,7 +5,7 @@ import { styles } from './BatButtonStyles';
 
 export function BatButton() {
   return (
-    <View>      
+    <>      
       {/* Button 01 */}
       <Pressable
        onPress={() => {console.log("Fui pressionado")}}
@@ -16,11 +16,11 @@ export function BatButton() {
 
       {/* Button 02 */}
        <Pressable
-       onPress={() => {console.log("Fui pressionado")}}
+       onPress={() => {console.log("Fui pressionado")}} 
        style={styles.button}
        >
         <Text style={styles.text}>✨ COPY</Text>
        </Pressable>
-    </View>
+    </>
   );
 }
