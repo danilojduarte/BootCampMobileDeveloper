@@ -4,18 +4,19 @@ import { BatTextInput } from '../BatTextInput/BatTextInput';
 import { useState } from 'react';
 
 import { styles } from './BatButtonStyles';
+import generatePass from '../../service/passwordServices';
 
 export function BatButton() {
   const [pass, setPass] = useState('');
 
   function handleGenerateButton() {
-    setPass('Olá')
+    let generateToken = generatePass()
+    setPass(generateToken)
   }
 
   return (
     <>      
-      <BatTextInput pass={pass}/>
-      
+      <BatTextInput pass={pass}/> 
       {/* Button 01 */}
       <Pressable
        onPress={handleGenerateButton}
