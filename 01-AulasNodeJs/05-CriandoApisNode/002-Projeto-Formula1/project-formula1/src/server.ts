@@ -8,10 +8,12 @@ server.get("/teams", async(request, response) => {
   return [
     {id: 1, name: "ferrari"}
   ];
-})
+});
+
+
 
 server.listen({port: 3333}, () => {
   console.log("Server init");
-})
+});
 
 // Aula finalizada, iniciando aula 'Criando meus endpoints'
