@@ -26,6 +26,14 @@ server.get("/drivers", async(request, response) => {
     return { drivers };
 });
 
+interface DriverParams {
+  id: string
+}
+
+server.get("/drivers/:id", async (request, response) => {
+  const id: request.params.id;
+});
+
 server.listen({port: 3333}, () => {
   console.log("Server init");
 });
