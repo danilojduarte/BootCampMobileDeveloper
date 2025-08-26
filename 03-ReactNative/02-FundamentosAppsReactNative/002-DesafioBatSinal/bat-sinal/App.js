@@ -1,52 +1,19 @@
-import React, { useState } from "react";
-import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native";
-import Form from "./components/Form";
+import * as React from "react";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+
+import Tela1 from "./screen/Tela1";
+import Tela2 from "./screen/Tela2";
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
-  const [showForm, setShowForm] = useState(false);
-
   return (
-    <View style={styles.container}>
-      {!showForm ? (
-        <>
-          <Image
-            source={require("./assets/logo.png")} // Coloque seu logo
-            style={styles.logo}
-          />
-          <TouchableOpacity style={styles.button} onPress={() => setShowForm(true)}>
-            <Text style={styles.buttonText}>Activate Bat Signal</Text>
-          </TouchableOpacity>
-        </>
-      ) : (
-        <Form />
-      )}
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Tela1" component={Tela1} />
+        <Stack.Screen name="Tela2" component={Tela2} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-    padding: 20,
-  },
-  logo: {
-    width: 150,
-    height: 150,
-    marginBottom: 30,
-    resizeMode: "contain",
-  },
-  button: {
-    backgroundColor: "#333",
-    paddingVertical: 12,
-    paddingHorizontal: 25,
-    borderRadius: 8,
-  },
-  buttonText: {
-    color: "#fff",
-    fontWeight: "bold",
-    fontSize: 16,
-  },
-});
