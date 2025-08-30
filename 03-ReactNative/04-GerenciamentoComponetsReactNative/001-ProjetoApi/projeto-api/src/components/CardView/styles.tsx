@@ -8,4 +8,12 @@ export const styles = StyleSheet.create({
     overflow: 'hidden',
     borderRadius: 8,
   },
+  logoContainer:{
+    alignItems: 'center',
+  },
+  imageLogo:{
+    flex: 1,
+    width: '65%',
+    resizeMode: 'contain',
+  },
 })

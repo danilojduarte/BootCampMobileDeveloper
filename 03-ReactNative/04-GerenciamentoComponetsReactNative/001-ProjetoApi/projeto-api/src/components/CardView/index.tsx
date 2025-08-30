@@ -7,6 +7,9 @@ import { styles } from './styles';
 export default function CardView(){
   return (
     <View style={styles.imageContainer}>
+      <View style={styles.logoContainer}>
+        <Image style={styles.imageLogo} source={Logo} />
+      </View>
       <Text>CardView Works!!</Text>
     </View>
   );
