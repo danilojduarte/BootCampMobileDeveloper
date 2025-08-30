@@ -1,5 +1,7 @@
 import React from 'react';
 import { View, Text, Button, Image } from 'react-native';
+
+import Logo from '../../../assets/logo.png';
 import { styles } from './styles';
 
 export default function CardView(){
