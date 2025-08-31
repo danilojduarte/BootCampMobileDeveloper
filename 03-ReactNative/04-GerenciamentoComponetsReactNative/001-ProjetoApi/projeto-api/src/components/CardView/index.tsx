@@ -5,11 +5,18 @@ import Logo from '../../../assets/logo.png';
 import { styles } from './styles';
 
 export default function CardView(){
-  return (
-    <View style={styles.imageContainer}>
-      <View style={styles.logoContainer}>
+
+  const renderLogoBox = () => (
+    <View style={styles.logoContainer}>
         <Image style={styles.imageLogo} source={Logo} />
       </View>
+  )
+
+
+
+
+  return (
+    <View style={styles.imageContainer}>
       <Text>CardView Works!!</Text>
     </View>
   );
