@@ -11,8 +11,8 @@ export default function GarageScreen() {
         <View style={[styles.triangleConner, styles.topRight]}></View>
         <View style={[styles.triangleConner, styles.bottomLeft]}></View>
         <View style={[styles.triangleConner, styles.bottomRight]}></View>
+        <CardView />
       </View>
-      <CardView />
       <Text>Works</Text>
     </View>
   );

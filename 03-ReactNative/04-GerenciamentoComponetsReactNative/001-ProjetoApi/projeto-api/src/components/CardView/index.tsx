@@ -15,4 +15,4 @@ export default function CardView(){
   );
 }
 
-// Aula, importando imagens
+// Aula, trabalhando sub components
