@@ -3,6 +3,7 @@ import { View, Text, Button, Image } from 'react-native';
 
 import Logo from '../../../assets/logo.png';
 import { styles } from './styles';
+import Divider from '../Divider';
 
 export default function CardView(){
 
@@ -17,9 +18,10 @@ export default function CardView(){
 
   return (
     <View style={styles.imageContainer}>
-      <Text>CardView Works!!</Text>
+      {renderLogoBox()}
+      <Divider />
     </View>
   );
 }
 
-// Aula, trabalhando sub components
+// Aula, Render Car Detail
