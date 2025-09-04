@@ -11,7 +11,9 @@ export default function CardView(){
     <View style={styles.logoContainer}>
         <Image style={styles.imageLogo} source={Logo} />
       </View>
-  )
+  );
+
+  const renderCarDetails = () => ({})
 
 
 
@@ -19,6 +21,8 @@ export default function CardView(){
   return (
     <View style={styles.imageContainer}>
       {renderLogoBox()}
+
+
       <Divider />
     </View>
   );
