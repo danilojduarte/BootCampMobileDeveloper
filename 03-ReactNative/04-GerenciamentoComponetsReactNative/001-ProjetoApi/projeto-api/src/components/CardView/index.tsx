@@ -13,7 +13,12 @@ export default function CardView(){
       </View>
   );
 
-  const renderCarDetails = () => ({})
+  const renderCarDetails = () => (
+    <View style={{ alignItems: 'center' }}>
+      <Text style={styles.carBrand}>Lamborghini</Text>
+      <Text style={styles.carName}>Model</Text>
+    </View>
+  )
 
 
 
@@ -24,8 +29,9 @@ export default function CardView(){
 
 
       <Divider />
+      {renderCarDetails()}
     </View>
   );
 }
 
-// Aula, Render Car Detail
+// Aula, Render Car Imagem
