@@ -4,6 +4,7 @@ import { View, Text, Button, Image } from 'react-native';
 import Logo from '../../../assets/logo.png';
 import { styles } from './styles';
 import Divider from '../Divider';
+import { CAR_ASSETS_BASE_URL } from '../../constants/car';
 
 export default function CardView(){
 
@@ -21,9 +22,11 @@ export default function CardView(){
   )
 
   const renderCardImage = () => (
-    <Image style={styles.image}
-    source={{ uri: "https://digitalinnovationone.github.io/fake-data-api-lamborghini/assets/3.png",}}
-  )
+    <Image 
+    style={styles.image}
+    source={{ uri: `${CAR_ASSETS_BASE_URL}1.png`,}}
+    />
+  );
 
 
 
@@ -31,11 +34,12 @@ export default function CardView(){
     <View style={styles.imageContainer}>
       {renderLogoBox()}
 
-
       <Divider />
       {renderCarDetails()}
+      {renderCardImage()}
+
+      <Divider />
     </View>
   );
 }
 
-// Aula, Render Car Imagem
