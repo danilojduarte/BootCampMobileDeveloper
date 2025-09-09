@@ -20,6 +20,10 @@ export default function CardView(){
     </View>
   )
 
+  const renderCardImage = () => (
+    <Image style={styles.image}
+    source={{ uri: "https://digitalinnovationone.github.io/fake-data-api-lamborghini/assets/3.png",}}
+  )
 
 
 
