@@ -19,4 +19,4 @@ const styles = StyleSheet.create({
   },
 });
 
-// Aula, Buy, Button
+// Aula, render priceControls
