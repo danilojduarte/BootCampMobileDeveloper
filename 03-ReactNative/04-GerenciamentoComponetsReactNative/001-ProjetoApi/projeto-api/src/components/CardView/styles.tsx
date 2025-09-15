@@ -38,4 +38,15 @@ export const styles = StyleSheet.create({
     width: '100%',
     height: '100%'
   },
+  priceLabelContainer:{
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    paddingBottom: 10,
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  priceLabel:{
+    color: '#fff',
+    fontSize: 22,
+  },
 })

@@ -20,6 +20,14 @@ export default function CardView(){
       <Text style={styles.carBrand}>Lamborghini</Text>
       <Text style={styles.carName}>Model</Text>
     </View>
+  );
+
+  const renderPriceControls = () => (
+    <View style={styles.priceLabelContainer}>
+      <Button title='<' color={'#01a6b3'} onPress={() => {}}/>
+      <Text style={styles.priceLabel}>Valor</Text>
+      <Button title='>' color={'#01a6b3'} onPress={() => {}}/>
+    </View>
   )
 
   const renderCardImage = () => (
@@ -41,6 +49,7 @@ export default function CardView(){
 
       <Divider />
       <BuyButton />
+      {renderPriceControls()}
     </View>
   );
 }
